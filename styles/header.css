@@ -1,0 +1,98 @@
+header {
+    width: 100vw;
+    height: 17vh;
+
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2vw;
+}
+
+.secao-header {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 80%;
+
+    background-color: rgba(112, 30, 30, 0);
+}
+
+#logo-profissao {
+    align-items: center;
+}
+
+#botoes-header {
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-header {
+    width: 30%;
+    height: 40%;
+    border: none;
+    border-radius: 10vw;
+    box-shadow: 0.2vw 0.2vw 0.2vw var(--corSombra);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--corBranca);
+
+    padding: 0 3%;
+}
+
+.botao-header h6 {
+    font-family: var(--fontPrincipal);
+    font-size: 1.2vw;
+}
+
+.botao-header i {
+    font-size: 1.4vw;
+}
+
+#btn-home{
+    background-color: var(--corprincipal);
+}
+
+#btn-projetos{
+    background-color: var(--corprincipal);
+}
+
+#btn-formacao{
+    background-color: var(--corprincipal);
+}
+
+
+#img {
+    width: 4vw;
+    height: 4vw;
+
+    margin: 0 2% 0 0;
+
+    border-radius: 50%;
+    box-shadow: 0.2vw 0.2vw 0.2vw var(--corSombra);
+
+    background-color: rgba(185, 34, 34, 0);
+}
+
+#profissao {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0);
+
+    display: flex;
+    align-items: center;
+
+    font-family: var(--fontPrincipal);
+    font-weight: 800;
+    font-style: normal;
+    color: var(--corPreta);
+}

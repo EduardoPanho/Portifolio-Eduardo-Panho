@@ -1,0 +1,26 @@
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Akatab:wght@800&family=Archivo+Black&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+--corprincipal:#3E848C;
+--corsecundariaescuro:#025159;
+--cormédia:#7AB8BF;
+--corclara:#C4EEF2;
+--cordetalhes:#A67458;
+--corPreta:#353535;
+--corSombra:#35353577;
+--corBranca:#F5F4F4;
+--corRosa:#F14598;
+--corAmarela:#F2BA57;
+--corAzul:#26B2DA
+
+--fontPrincipal:"Akatab";
+}
