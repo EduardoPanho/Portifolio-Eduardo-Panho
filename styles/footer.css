@@ -1,6 +1,6 @@
 footer{
     width: 100vw;
-    height: 11vh;
+    height: 6.5vh;
 
     position: fixed;
     bottom: 0;
@@ -9,4 +9,20 @@ footer{
     z-index: -1;
 
     background-color: rgb(255, 255, 255);
+}
+
+.button-footer {
+    position: absolute;
+    top: -2vh;
+    left: -2vh;
+    font-size: 3vw;
+    width: 0%;
+    height: 100%;
+    border: none;
+    border-radius: 10vw;
+    box-shadow: 0.2vw 0.2vw 0.2vw var(--corSombra);
+    align-items: center;
+    color: var(--corsecundariaescuro);
+
+    padding: 0 3%;
 }

@@ -1,23 +1,23 @@
-#imagem-principal{
+#imagem-principal {
     width: 52vw;
     height: 106vh;
     transform: rotate(-20deg);
 
     position: absolute;
     top: 1vh;
-    left: 21vh;
+    left: 15vh;
     transform: rotate(-35deg);
 
     background-color: rgba(177, 219, 219, 0);
 }
 
-#informacoes{
+#informacoes {
     width: 30vw;
     height: 60vh;
 
     position: absolute;
-    top: 23vh;
-    left: 54vw;
+    top: 22vh;
+    left: 57vw;
 
-    background-color: rgb(64, 170, 231);
+    background-color: rgba(64, 170, 231, 0);
 }

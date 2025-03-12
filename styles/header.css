@@ -1,5 +1,5 @@
 header {
-    width: 100vw;
+    width: 90vw;
     height: 17vh;
 
     background-color: rgb(255, 255, 255);
@@ -50,23 +50,21 @@ header {
 }
 
 .botao-header h6 {
-    font-family: var(--fontPrincipal);
-    font-size: 1.2vw;
-}
-
-.botao-header i {
+    font-family: "Akatab", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 1.4vw;
 }
 
-#btn-home{
+#btn-home {
     background-color: var(--corprincipal);
 }
 
-#btn-projetos{
+#btn-projetos {
     background-color: var(--corprincipal);
 }
 
-#btn-formacao{
+#btn-formacao {
     background-color: var(--corprincipal);
 }
 
@@ -95,4 +93,42 @@ header {
     font-weight: 800;
     font-style: normal;
     color: var(--corPreta);
+    font-size: 1.5vw;
+}
+
+.texto-main h6 {
+    font-family: "Akatab", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+.texto-main h1 {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+}
+
+.texto-main h2 {
+    position: absolute;
+    top: 10vh;
+    left: 0vh;
+
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 5vw;
+}
+
+.texto-main h2 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.secao-header h4 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
