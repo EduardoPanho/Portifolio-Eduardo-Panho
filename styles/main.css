@@ -1,12 +1,12 @@
 #imagem-principal {
-    width: 52vw;
+    width: 60vw;
     height: 106vh;
     transform: rotate(-20deg);
 
     position: absolute;
     top: 1vh;
     left: 15vh;
-    transform: rotate(-35deg);
+    transform: rotate(-5deg);
 
     background-color: rgba(177, 219, 219, 0);
 }
@@ -20,4 +20,32 @@
     left: 57vw;
 
     background-color: rgba(64, 170, 231, 0);
+}
+
+.texto-main:hover h1 {
+    color: rgb(39, 39, 39);
+}
+
+
+.texto-main:hover h2 {
+    color: rgb(94, 94, 94)
+}
+
+.texto-main:hover h6 {
+    color: rgb(75, 75, 75)
+}
+
+.texto-main h1 {
+    cursor: default;
+    transition: all 0.2s ease-in-out;
+}
+
+.texto-main h2 {
+    cursor: default;
+    transition: all 0.2s ease-in-out;
+}
+
+.texto-main h6 {
+    cursor: default;
+    transition: all 0.2s ease-in-out;
 }
