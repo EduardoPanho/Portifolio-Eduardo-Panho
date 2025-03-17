@@ -1,5 +1,5 @@
 header {
-    width: 90vw;
+    width: 96vw;
     height: 17vh;
 
     background-color: rgb(255, 255, 255);
@@ -33,6 +33,7 @@ header {
 }
 
 .botao-header {
+
     width: 30%;
     height: 40%;
     border: none;
