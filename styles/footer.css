@@ -11,6 +11,12 @@ footer {
     background-color: rgba(255, 255, 255, 0);
 }
 
+.footer-button {
+position: absolute;
+top: -1vw;
+left: 3vh;
+
+}
 
 .footer-button {
     outline: none;
@@ -52,8 +58,8 @@ footer {
 .footer-button .wrap p {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin: 0;
+    gap: 15px;
+    margin: 20;
     transition: all 0.2s ease;
     transform: translateY(2%);
     mask-image: linear-gradient(to bottom, white 40%, transparent);
@@ -119,3 +125,7 @@ footer {
         0 3rem 3rem rgba(0, 0, 0, 0.3),
         0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
 }
+
+.footer-button:hover{
+    transform: scale(1.1);
+    }
