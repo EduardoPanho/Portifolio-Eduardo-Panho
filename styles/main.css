@@ -22,11 +22,6 @@
     background-color: rgba(64, 170, 231, 0);
 }
 
-.texto-main:hover h1 {
-    color: rgb(255, 255, 255);
-}
-
-
 .texto-main:hover h2 {
     color: rgb(94, 94, 94)
 }
@@ -48,4 +43,67 @@
 .texto-main h6 {
     cursor: default;
     transition: all 0.2s ease-in-out;
+}
+
+.card-content {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.card-front {
+    background-color: rgba(137, 43, 226, 0);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-content:hover {
+    transform: rotateY(180deg);
+}
+
+.wrapper {
+    position: absolute;
+    top: 18vh;
+    left: 125vh;
+    transform: rotate(45deg);
+}
+
+.Carrossel {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    height: 100vh;
+
+    background-color: rgba(112, 30, 30, 0);
+    animation: slideAnim 300s infinite;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes slideAnim {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -200vw;
+    }
 }

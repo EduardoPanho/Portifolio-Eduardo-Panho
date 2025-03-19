@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card-front {
+    background-color: blueviolet;
+}
+
+.card-front,
+.card-back{
+position: absolute;
+height: 100%;
+width: 100%;
+backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
