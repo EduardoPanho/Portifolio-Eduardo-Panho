@@ -1,222 +1,315 @@
 header {
-    width: 95vw;
-    height: 17vh;
+  width: 95vw;
+  height: 17vh;
 
-    background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-    padding: 0 2vw;
+  padding: 0 2vw;
 }
 
 .secao-header {
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    height: 80%;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 80%;
 
-    background-color: rgba(112, 30, 30, 0);
+  background-color: rgba(112, 30, 30, 0);
 }
 
 #logo-profissao {
-    align-items: center;
+  align-items: center;
 }
 
 #botoes-header {
 
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .botao-header h6 {
-    font-family: "Akatab", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 1.4vw;
+  font-family: "Akatab", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.4vw;
 }
 
 #btn-home {
-    background-color: var(--corprincipal);
+  background-color: var(--corprincipal);
 }
 
 #btn-projetos {
-    background-color: var(--corprincipal);
+  background-color: var(--corprincipal);
 }
 
 #btn-formacao {
-    background-color: var(--corprincipal);
+  background-color: var(--corprincipal);
 }
 
 
 #img {
-    width: 4vw;
-    height: 4vw;
+  width: 4vw;
+  height: 4vw;
 
-    margin: 0 2% 0 0;
+  margin: 0 2% 0 0;
 
-    border-radius: 1%;
-    background-color: rgba(255, 255, 255, 0);
+  border-radius: 1%;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #profissao {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 255, 0);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    font-family: var(--fontPrincipal);
-    font-weight: 800;
-    font-style: normal;
-    color: black;
-    font-size: 1.5vw;
+  font-family: var(--fontPrincipal);
+  font-weight: 800;
+  font-style: normal;
+  color: black;
+  font-size: 1.5vw;
 }
 
 .texto-main h6 {
-    font-family: "Akatab", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 2vw;
+  font-family: "Akatab", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2vw;
 }
 
 .texto-main h1 {
-    font-family: "Monoton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5vw;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vw;
 }
 
 .texto-main h2 {
-    position: absolute;
-    top: 10vh;
-    left: 0vh;
+  position: absolute;
+  top: 10vh;
+  left: 0vh;
 
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 5vw;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 5vw;
 }
 
 .texto-main h2 {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .secao-header h4 {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.button:hover{
-transform: scale(1.1);
+.button:hover {
+  transform: scale(1.1);
 }
 
-/* From Uiverse.io by marcelodolza */ 
+/* From Uiverse.io by marcelodolza */
 .button {
-    --white: #ffe7ff;
-    --bg: #080808;
-    --radius: 100px;
-    outline: none;
-    cursor: pointer;
-    border: 0;
-    position: relative;
-    border-radius: var(--radius);
-    background-color: var(--bg);
-    transition: all 0.2s ease;
-    box-shadow:
-      inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
-      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
-      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
-      0 3rem 3rem rgba(0, 0, 0, 0.3),
-      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
-  }
-  .button .wrap {
-    font-size: 25px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
-    padding: 10px 30px;
-    border-radius: inherit;
-    position: relative;
-    overflow: hidden;
-  }
-  .button .wrap p span:nth-child(2) {
-    display: none;
-  }
-  .button:hover .wrap p span:nth-child(1) {
-    display: none;
-  }
-  .button:hover .wrap p span:nth-child(2) {
-    display: inline-block;
-  }
-  .button .wrap p {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 0;
-    transition: all 0.2s ease;
-    transform: translateY(2%);
-    mask-image: linear-gradient(to bottom, white 40%, transparent);
-  }
-  .button .wrap::before,
-  .button .wrap::after {
-    content: "";
-    position: absolute;
-    transition: all 0.3s ease;
-  }
-  .button .wrap::before {
-    left: -15%;
-    right: -15%;
-    bottom: 25%;
-    top: -100%;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.12);
-  }
-  .button .wrap::after {
-    left: 6%;
-    right: 6%;
-    top: 12%;
-    bottom: 40%;
-    border-radius: 22px 22px 0 0;
-    box-shadow: inset 0 10px 8px -10px rgba(255, 255, 255, 0.8);
-    background: linear-gradient(
-      180deg,
+  --white: #ffe7ff;
+  --bg: #080808;
+  --radius: 100px;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  position: relative;
+  border-radius: var(--radius);
+  background-color: var(--bg);
+  transition: all 0.2s ease;
+  box-shadow:
+    inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+}
+
+.button .wrap {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 10px 30px;
+  border-radius: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.button .wrap p span:nth-child(2) {
+  display: none;
+}
+
+.button:hover .wrap p span:nth-child(1) {
+  display: none;
+}
+
+.button:hover .wrap p span:nth-child(2) {
+  display: inline-block;
+}
+
+.button .wrap p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  transition: all 0.2s ease;
+  transform: translateY(2%);
+  mask-image: linear-gradient(to bottom, white 40%, transparent);
+}
+
+.button .wrap::before,
+.button .wrap::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.button .wrap::before {
+  left: -15%;
+  right: -15%;
+  bottom: 25%;
+  top: -100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.button .wrap::after {
+  left: 6%;
+  right: 6%;
+  top: 12%;
+  bottom: 40%;
+  border-radius: 22px 22px 0 0;
+  box-shadow: inset 0 10px 8px -10px rgba(255, 255, 255, 0.8);
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.3) 0%,
       rgba(0, 0, 0, 0) 50%,
-      rgba(0, 0, 0, 0) 100%
-    );
+      rgba(0, 0, 0, 0) 100%);
+}
+
+.button:hover {
+  box-shadow:
+    inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.4),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.7),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+}
+
+.button:hover .wrap::before {
+  transform: translateY(-5%);
+}
+
+.button:hover .wrap::after {
+  opacity: 0.4;
+  transform: translateY(5%);
+}
+
+.button:hover .wrap p {
+  transform: translateY(-4%);
+}
+
+.button:active {
+  transform: translateY(4px);
+  box-shadow:
+    inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.5),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.8),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.4),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+}
+
+
+
+@media (max-width: 1559px) {
+
+  .secao-header {
+    width: 50%;
   }
-  .button:hover {
-    box-shadow:
-      inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.4),
-      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
-      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.7),
-      0 3rem 3rem rgba(0, 0, 0, 0.3),
-      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+
+  .button .wrap {
+    padding: 15px 30px;
+    justify-content: space-between;
   }
-  .button:hover .wrap::before {
-    transform: translateY(-5%);
+
+  #img {
+    width: 5vw;
+    height: 5vw;
   }
-  .button:hover .wrap::after {
-    opacity: 0.4;
-    transform: translateY(5%);
+
+  #profissao {
+    display: none;
   }
-  .button:hover .wrap p {
-    transform: translateY(-4%);
+
+  .button .wrap {
+    font-size: 19px;
   }
-  .button:active {
-    transform: translateY(4px);
-    box-shadow:
-      inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.5),
-      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.8),
-      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.4),
-      0 3rem 3rem rgba(0, 0, 0, 0.3),
-      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+
+}
+
+
+
+@media (max-width: 820px) {
+
+  .secao-header {
+    width: 50%;
   }
-  
+
+  .button .wrap {
+    padding: 10px 5px;
+    justify-content: space-between;
+  }
+
+  #img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  #profissao {
+    display: none;
+  }
+
+  .button .wrap {
+    font-size: 19px;
+  }
+
+}
+
+
+@media (max-width: 482px) {
+
+  .secao-header {
+    width: 50%;
+  }
+
+  .button .wrap {
+    padding: 1px 1px;
+    justify-content: space-between;
+  }
+
+  #img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  #profissao {
+    display: none;
+  }
+
+  .button .wrap {
+    font-size: 19px;
+  }
+
+}

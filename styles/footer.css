@@ -12,9 +12,9 @@ footer {
 }
 
 .footer-button {
-position: absolute;
-top: -1vw;
-left: 3vh;
+    position: absolute;
+    top: -1vw;
+    left: 3vh;
 
 }
 
@@ -126,6 +126,15 @@ left: 3vh;
         0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
 }
 
-.footer-button:hover{
+.footer-button:hover {
     transform: scale(1.1);
+}
+
+
+@media (max-width: 481px) {
+    .footer-button{
+    position: absolute;
+    top: -6vw;
+    left: 3vh;
     }
+}

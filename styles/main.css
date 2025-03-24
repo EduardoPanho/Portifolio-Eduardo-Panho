@@ -30,6 +30,10 @@
     color: rgb(122, 122, 122)
 }
 
+.texto-main:hover h1 {
+    color: rgb(85, 85, 85);
+}
+
 .texto-main h1 {
     cursor: default;
     transition: all 0.2s ease-in-out;
@@ -75,8 +79,8 @@
 
 .wrapper {
     position: absolute;
-    top: 18vh;
-    left: 125vh;
+    top: 25vh;
+    left: 135vh;
     transform: rotate(45deg);
 }
 
@@ -105,5 +109,111 @@
 
     100% {
         left: -200vw;
+    }
+}
+
+@media (max-width: 1559px) {
+
+    #imagem-principal {
+        width: 90vw;
+        height: 90vh;
+
+        position: absolute;
+        top: 20vh;
+        left: 4vh;
+    }
+
+    .wrapper {
+        position: absolute;
+        left: 108vh;
+    }
+}
+
+
+
+
+@media (max-width: 820px) {
+
+    #imagem-principal {
+        width: 260vw;
+        height: 80vh;
+
+        position: absolute;
+        top: 20vh;
+        left: -24vh;
+    }
+
+    #informacoes {
+        width: 60vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 22vh;
+        left: 5vw;
+    }
+
+    .texto-main h1 {
+        font-size: 7vh;
+    }
+
+    .texto-main h2 {
+        font-size: 7vh;
+
+        position: absolute;
+        top: 6vh;
+    }
+
+    .texto-main h6 {
+        font-size: 4vh;
+        color: rgb(0, 0, 0);
+        text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgb(255, 255, 255);
+  color: rgb(26, 26, 26);
+    }
+}
+
+
+
+@media (max-width: 482px) {
+
+    #imagem-principal {
+        width: 260vw;
+        height: 80vh;
+
+        position: absolute;
+        top: 20vh;
+        left: -24vh;
+    }
+
+    #informacoes {
+        width: 60vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 22vh;
+        left: 5vw;
+    }
+
+    .texto-main h1 {
+        font-size: 7vh;
+    }
+
+    .texto-main h2 {
+        font-size: 7vh;
+
+        position: absolute;
+        top: 6vh;
+    }
+
+    .texto-main h6 {
+        font-size: 4vh;
+        color: rgb(0, 0, 0);
+        text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgb(255, 255, 255);
+  color: rgb(26, 26, 26);
     }
 }
