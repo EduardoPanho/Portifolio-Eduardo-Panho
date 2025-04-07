@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(223, 221, 217);
+    overflow: hidden;
+}
+
+:root{
+--corprincipal:#838383;
+--corsecundariaescuro:#025159;
+--cormédia:#7AB8BF;
+--corclara:#C4EEF2;
+--cordetalhes:#A67458;
+--corPreta:rgb(232, 232, 232);
+--corSombra:#35353577;
+--corBranca:#F5F4F4;
+--corRosa:#F14598;
+--corAmarela:#F2BA57;
+--corAzul:#26B2DA;
+--white: #ffe7ff;
+--bg: #080808;
+--radius: 100px;
+}
+
