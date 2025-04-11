@@ -1,0 +1,15 @@
+#cards{
+    width: 100vw;
+    padding: 0 10vw;
+
+    display: flex;
+    grid-template-columns: repeat(5 , 12vw);
+    gap: 5vw;
+}
+
+.card{
+    width: 12vw;
+    height: 35vh;
+
+    background-color: purple;
+}
