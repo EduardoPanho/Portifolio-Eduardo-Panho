@@ -1,21 +1,21 @@
-let titulos = ["titulo 1", "titulo 1", "titulo 1", "titulo 1", "titulo 1", "titulo 1", "titulo 1", "titulo 1", "titulo 1", "titulo 1"]
-let valores = ["15.99", "15.99", "15.99", "15.99", "15.99", "15.99", "15.99", "15.99", "15.99", "15.99"]
+import { bd_cards_projetos } from "../model/cards_projetos_bd.js"
 
 export function createCards() {
     let cards_section = document.getElementById("cards");
 
-    for (let i = 0; i < titulos.length; i++) {
+    bd_cards_projetos.map((card_bd) => {
         let card = document.createElement("div");
         card.className = "card";
 
         let titulo = document.createElement("h1");
-        titulo.textContent = titulos[0];
+        titulo.textContent = card_bd.titulo;
+
         let preco = document.createElement("h3");
-        preco.textContent = valores[0];
+        preco.textContent = card_bd.preco;
 
         card.appendChild(titulo);
         card.appendChild(preco);
 
         cards_section.appendChild(card);
-    }
+    })
 }
