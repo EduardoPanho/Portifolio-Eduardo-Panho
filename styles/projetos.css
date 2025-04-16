@@ -3,6 +3,9 @@
 @import url(./banner.css);
 @import url(./cards.css);
 
-body{
-    overflow-x: hidden;
+
+.main_espaco{
+    width: 2vw;
+    height: 20vw;
+    background-color: rgba(128, 0, 128, 0);
 }

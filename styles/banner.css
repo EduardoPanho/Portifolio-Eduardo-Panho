@@ -2,13 +2,214 @@
     width: 500vw;
     height: 10vh;
 
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0);
 }
 
 .banner{
     width: 90vw;
-    height: 44vh;
+    height: 100vh;
 
     margin: 3vh 5vw;
 }
 
+#banners_com_btns{
+    height: 50vh;
+    position: absolute;
+    top: 20vh;
+}
+
+#banners{
+    width: 500vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    left: -000vw;
+
+    transition: all 0.5s ease-in-out;
+}
+
+
+.banner{
+    width: 90vw;
+    height: 44vh;
+    margin: 3vh 5vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow:
+    inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+    0 3rem 3rem rgba(0, 0, 0, 0.3),
+    0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+}
+
+#banner_1{
+background-image: url(../Assets/Background_banner1.jpg);
+}
+#banner_2{
+background-image: url(../Assets/Background_banner2.jpg);
+}
+#banner_3{
+background-image: url(../Assets/Background_banner3.jpg);
+}
+#banner_4{
+background-image: url(../Assets/Background_banner4.jpg);
+}
+#banner_5{
+background-image: url(../Assets/Background_banner5.jpg);
+}
+
+#banner_1,
+#banner_2,
+#banner_3,
+#banner_4,
+#banner_5 {
+    border-radius: 7vh;
+}
+
+#btns_banner{
+    width: 100vw;
+    height: 5vh;
+
+    position: absolute;
+    top: 40vh;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_banner{
+    width: 1.2vw;
+    height: 1.2vw;
+
+    border-radius: 50%;
+    margin: 0 0.3vw;
+
+    background-color: rgb(255, 255, 255);
+
+    transition: all 0.2s ease-in-out;
+}
+
+#btn_banner_0{
+    transform: scale(1.4);
+}
+
+.btn_banner {
+    --white: #ffe7ff;
+    --bg: #080808;
+    --radius: 100px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    border-radius: var(--radius);
+    background-color: var(--bg);
+    transition: all 0.2s ease;
+    box-shadow:
+      inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+      0 3rem 3rem rgba(0, 0, 0, 0.3),
+      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+  }
+  
+  .btn_banner.wrap {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px 30px;
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn_banner.wrap p span:nth-child(2) {
+    display: none;
+  }
+  
+  .btn_banner:hover .wrap p span:nth-child(1) {
+    display: none;
+  }
+  
+  .btn_banner:hover .wrap p span:nth-child(2) {
+    display: inline-block;
+  }
+  
+  .btn_banner.wrap p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    transition: all 0.2s ease;
+    transform: translateY(2%);
+    mask-image: linear-gradient(to bottom, white 40%, transparent);
+  }
+  
+  .btn_banner.wrap::before,
+  .btn_banner.wrap::after {
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  
+  .btn_banner.wrap::before {
+    left: -15%;
+    right: -15%;
+    bottom: 25%;
+    top: -100%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  .btn_banner.wrap::after {
+    left: 6%;
+    right: 6%;
+    top: 12%;
+    bottom: 40%;
+    border-radius: 22px 22px 0 0;
+    box-shadow: inset 0 10px 8px -10px rgba(255, 255, 255, 0.8);
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0) 100%);
+  }
+  
+  .btn_banner:hover {
+    box-shadow:
+      inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.4),
+      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.7),
+      0 3rem 3rem rgba(0, 0, 0, 0.3),
+      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+  }
+  
+  .btn_banner:hover .wrap::before {
+    transform: translateY(-5%);
+  }
+  
+  .btn_banner:hover .wrap::after {
+    opacity: 0.4;
+    transform: translateY(5%);
+  }
+  
+  .btn_banner:hover .wrap p {
+    transform: translateY(-4%);
+  }
+  
+  .btn_banner:active {
+    transform: translateY(4px);
+    box-shadow:
+      inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.5),
+      inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.8),
+      inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.4),
+      0 3rem 3rem rgba(0, 0, 0, 0.3),
+      0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+  }
+  

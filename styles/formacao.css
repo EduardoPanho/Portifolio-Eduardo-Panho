@@ -1,0 +1,7 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./formação.css);
+
+body{
+    overflow-x: hidden;
+}
