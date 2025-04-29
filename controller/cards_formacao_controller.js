@@ -1,21 +1,35 @@
-import { bd_cards_formacao } from "./../model/cards_formacao_bd.js"; 
+import { bd_cards_formacao } from "./../model/cards_formacao_bd.js";
 
 export function createCards() {
-    let cards_section = document.getElementById("cards");
+    const cards_section = document.getElementById("cards");
 
-    bd_cards_formacao.forEach((card_bd) => {
-        let card = document.createElement("div");
+
+    const colunaEsquerda = document.createElement("div");
+    colunaEsquerda.className = "coluna-esquerda";
+
+    const colunaDireita = document.createElement("div");
+    colunaDireita.className = "coluna-direita";
+
+    bd_cards_formacao.forEach((card_bd, index) => {
+        const card = document.createElement("div");
         card.className = "card";
 
-        let titulo = document.createElement("h1");
+        const titulo = document.createElement("h1");
         titulo.textContent = card_bd.titulo;
 
-        let preco = document.createElement("h3");
+        const preco = document.createElement("h3");
         preco.textContent = card_bd.preco;
 
         card.appendChild(titulo);
         card.appendChild(preco);
 
-        cards_section.appendChild(card);
-    })
+        if (i % 2 === 0) {
+            colunaEsquerda.appendChild(card);
+        } else {
+            colunaDireita.appendChild(card);
+        }
+    });
+
+    cards_section.appendChild(colunaEsquerda);
+    cards_section.appendChild(colunaDireita);
 }
