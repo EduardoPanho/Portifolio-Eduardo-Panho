@@ -7,6 +7,10 @@ export function createCards() {
         let card = document.createElement("div");
         card.className = "card";
 
+        if (card_bd.imagem) {
+            card.style.backgroundImage = `url(${card_bd.imagem})`;
+        }
+
         let titulo = document.createElement("h1");
         titulo.textContent = card_bd.titulo;
 

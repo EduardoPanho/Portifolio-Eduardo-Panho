@@ -14,22 +14,25 @@ export function createCards() {
         const card = document.createElement("div");
         card.className = "card";
 
+        if (card_bd.imagem) {
+            card.style.backgroundImage = `url(${card_bd.imagem})`;
+        }
+        
         const titulo = document.createElement("h1");
         titulo.textContent = card_bd.titulo;
-
+    
         const preco = document.createElement("h3");
         preco.textContent = card_bd.preco;
-
+    
         card.appendChild(titulo);
         card.appendChild(preco);
-
-        if (i % 2 === 0) {
+    
+        if (index % 2 === 0) {
             colunaEsquerda.appendChild(card);
         } else {
             colunaDireita.appendChild(card);
         }
-    });
 
-    cards_section.appendChild(colunaEsquerda);
-    cards_section.appendChild(colunaDireita);
+        cards_section.appendChild(card);
+    });
 }

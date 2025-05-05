@@ -6,7 +6,7 @@ footer {
     bottom: 0;
     left: 0;
 
-    z-index: -1;
+    z-index: 5;
 
     background-color: rgba(255, 255, 255, 0);
 }
@@ -35,7 +35,7 @@ footer {
 }
 
 .footer-button .wrap {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.7);
     border-radius: inherit;
@@ -43,23 +43,11 @@ footer {
     overflow: hidden;
 }
 
-.footer-button .wrap p span:nth-child(2) {
-    display: none;
-}
-
-.footer-button:hover .wrap p span:nth-child(1) {
-    display: none;
-}
-
-.footer-button:hover .wrap p span:nth-child(2) {
-    display: inline-block;
-}
-
 .footer-button .wrap p {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin: 20;
+    margin: 20px;
     transition: all 0.2s ease;
     transform: translateY(2%);
     mask-image: linear-gradient(to bottom, white 40%, transparent);

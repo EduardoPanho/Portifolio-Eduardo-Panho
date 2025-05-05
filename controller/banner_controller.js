@@ -1,7 +1,7 @@
 let bannerAtual = 0;
 const totalBanners = 5;
 
-function girarBanner(n_banner) {
+export function girarBanner(n_banner) {
     let banners = document.getElementById("banners");
     banners.style.left = "-" + n_banner + "00vw";
 
