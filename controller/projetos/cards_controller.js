@@ -1,4 +1,4 @@
-import { bd_cards_projetos } from "../model/cards_projetos_bd.js"
+import { bd_cards_projetos } from "./../../model/cards_projetos_bd.js";
 
 export function createCards() {
     let cards_section = document.getElementById("cards");

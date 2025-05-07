@@ -1,4 +1,4 @@
-import { bd_cards_formacao } from "./../model/cards_formacao_bd.js";
+import { bd_cards_formacao } from "./../../model/cards_formacao_bd.js";
 
 export function createCards() {
     const cards_section = document.getElementById("cards");

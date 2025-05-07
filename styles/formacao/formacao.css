@@ -1,6 +1,5 @@
-@import url(./formacao.css);
-@import url(./reset.css);
-@import url(./header.css);
+@import url(./../reset.css);
+@import url(./../repeated_css/header.css);
 @import url(./cards_formacao.css);
 
 body {

@@ -48,19 +48,19 @@
 }
 
 #banner_1{
-background-image: url(../Assets/Background_banner1.jpg);
+background-image: url(../../Assets/Background_banner1.jpg);
 }
 #banner_2{
-background-image: url(../Assets/Background_banner2.jpg);
+background-image: url(../../Assets/Background_banner2.jpg);
 }
 #banner_3{
-background-image: url(../Assets/Background_banner3.jpg);
+background-image: url(../../Assets/Background_banner3.jpg);
 }
 #banner_4{
-background-image: url(../Assets/Background_banner4.jpg);
+background-image: url(../../Assets/Background_banner4.jpg);
 }
 #banner_5{
-background-image: url(../Assets/Background_banner5.jpg);
+background-image: url(../../Assets/Background_banner5.jpg);
 }
 
 #banner_1,
