@@ -1,9 +1,12 @@
-import { bd_cards_projetos } from "./../../model/cards_projetos_bd.js";
+import { getProjects } from "../../services/projects_services.js";
 
-export function createCards() {
+
+export async function createCards() {
     let cards_section = document.getElementById("cards");
 
-    bd_cards_projetos.map((card_bd) => {
+    const bd_cards_projetos = await getProjects();
+
+    bd_cards_projetos.map((card_bd, index) => {
         let card = document.createElement("div");
         card.className = "card";
 
