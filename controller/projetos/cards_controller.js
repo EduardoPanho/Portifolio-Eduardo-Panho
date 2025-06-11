@@ -11,7 +11,7 @@ export async function createCards() {
         card.className = "card";
 
         if (card_bd.imagem) {
-            card.style.backgroundImage = `url(${card_bd.imagem})`;
+            card.style.backgroundImage = `url(${img})`;
         }
 
         let titulo = document.createElement("h1");
