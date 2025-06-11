@@ -14,14 +14,17 @@ export async function createCards() {
             card.style.backgroundImage = `url(${card_bd.imagem})`;
         }
 
+        let img = document.createElement('img');
+        img.src = card_bd.img;
+        
         let titulo = document.createElement("h1");
         titulo.textContent = card_bd.titulo;
 
-        let preco = document.createElement("h3");
-        preco.textContent = card_bd.preco;
+        let data = document.createElement("h3");
+        data.textContent = card_bd.data;
 
         card.appendChild(titulo);
-        card.appendChild(preco);
+        card.appendChild(data);
         card.appendChild(img);
 
         cards_section.appendChild(card);
