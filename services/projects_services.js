@@ -1,6 +1,6 @@
 export async function getProjects() {
     try {
-        const response = await fetch('http://localhost:3000/projetos')
+        const response = await fetch('https://back-end-teal-rho.vercel.app')
         const dados = await response.json()
         return dados
 
