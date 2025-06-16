@@ -4,13 +4,19 @@
 @import url(./cards.css);
 
 body {
+    margin: 0;
+    padding: 0;
     position: relative;
-    overflow: auto;
-
     overflow-x: hidden;
+    min-height: 100vh;
+
+    background: url(../../assets/Banner_Background.png) no-repeat center top;
+    background-size: cover;
+    background-position: center -100px;
+    background-color: rgb(223, 221, 217);
 }
 
-.main_espaco{
+.main_espaco {
     width: 2vw;
     height: 20vw;
     background-color: rgba(128, 0, 128, 0);
