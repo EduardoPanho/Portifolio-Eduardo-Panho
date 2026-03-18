@@ -1,14 +1,12 @@
-#imagem-principal {
-    width: 85vw;
-    height: 106vh;
-    transform: rotate(-20deg);
+body {
+    margin: 0;
+    padding: 0;
 
-    position: absolute;
-    top: 15vh;
-    left: 14vh;
-    transform: rotate(-2deg);
-
-    background-color: rgba(177, 219, 219, 0);
+    background-image: url('./../Assets/ImgPrincipal.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #informacoes {
@@ -22,67 +20,6 @@
     background-color: rgba(64, 170, 231, 0);
 }
 
-.texto-main:hover h2 {
-    color: rgb(94, 94, 94)
-}
-
-.texto-main:hover h6 {
-    color: rgb(122, 122, 122)
-}
-
-.texto-main:hover h1 {
-    color: rgb(85, 85, 85);
-}
-
-.texto-main h1 {
-    cursor: default;
-    transition: all 0.2s ease-in-out;
-}
-
-.texto-main h2 {
-    cursor: default;
-    transition: all 0.2s ease-in-out;
-}
-
-.texto-main h6 {
-    cursor: default;
-    transition: all 0.2s ease-in-out;
-}
-
-.card-content {
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    position: relative;
-    transition: 0.5s ease-in-out;
-}
-
-.card-front {
-    background-color: rgba(137, 43, 226, 0);
-}
-
-.card-front,
-.card-back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-}
-
-.card-back {
-    transform: rotateY(180deg);
-}
-
-.card-content:hover {
-    transform: rotateY(180deg);
-}
-
-.wrapper {
-    position: absolute;
-    top: 25vh;
-    left: 135vh;
-    transform: rotate(45deg);
-}
 
 .Carrossel {
     z-index: -1;
@@ -129,9 +66,6 @@
     }
 }
 
-
-
-
 @media (max-width: 820px) {
 
     #imagem-principal {
@@ -167,10 +101,10 @@
         font-size: 4vh;
         color: rgb(0, 0, 0);
         text-shadow:
-    1px 1px 2px black,
-    0 0 1em rgb(255, 255, 255),
-    0 0 0.2em rgb(255, 255, 255);
-  color: rgb(26, 26, 26);
+            1px 1px 2px black,
+            0 0 1em rgb(255, 255, 255),
+            0 0 0.2em rgb(255, 255, 255);
+        color: rgb(26, 26, 26);
     }
 }
 
@@ -211,9 +145,124 @@
         font-size: 4vh;
         color: rgb(0, 0, 0);
         text-shadow:
-    1px 1px 2px black,
-    0 0 1em rgb(255, 255, 255),
-    0 0 0.2em rgb(255, 255, 255);
-  color: rgb(26, 26, 26);
+            1px 1px 2px black,
+            0 0 1em rgb(255, 255, 255),
+            0 0 0.2em rgb(255, 255, 255);
+        color: rgb(26, 26, 26);
     }
+}
+
+.footer {
+    background-color: rgba(0, 0, 255, 0);
+    height: 6.5vh;
+    width: 100%;
+    bottom: 4.75vh;
+}
+
+.left {
+    background-color: rgba(72, 72, 38, 0);
+    height: 6.5vh;
+    width: 6.5vh;
+    margin-left: 6.45vh;
+    position: absolute;
+    border-radius: 20vh;
+}
+
+.center {
+    background-color: rgba(255, 255, 0, 0);
+    height: 6.5vh;
+    width: 61vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    background-color: rgba(0, 255, 51, 0);
+    height: 6.5vh;
+    width: 14.7vh;
+    right: 6.45vh;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Toolbarbt2,
+.Toolbarbt3 {
+    background-color: rgba(255, 255, 0, 0);
+    height: 6.5vh;
+    width: 6.5vh;
+    border-radius: 20vh;
+}
+
+.tab1,
+.search,
+.home,
+.projetos,
+.formacao {
+    background-color: rgba(255, 255, 255, 0);
+    height: 5vh;
+    position: relative;
+    border-radius: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.center {
+    background-image: url('../Assets/centerbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tab1,
+.search {
+    width: 8vh;
+}
+
+.tab1 {
+    margin-left: 1vh;
+}
+
+.tabimg,
+.searchimg {
+    width: 8vh;
+}
+
+.home {
+    width: 12vh;
+}
+
+.homeimg {
+    width: 12vh;
+}
+
+.projetos {
+    width: 13vh;
+}
+
+.projetosimg {
+    width: 16vh;
+}
+
+.formacao {
+    width: 13vh;
+}
+
+.formacaoimg {
+    width: 10vh;
+    margin-top: 0.4vh;
+}
+
+.search {
+    margin-right: 1vh;
 }
