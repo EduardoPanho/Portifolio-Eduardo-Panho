@@ -135,7 +135,7 @@ body {
     }
 
     .texto-main h2 {
-        font-size: 7vh;
+        font-size: 7vh;s
 
         position: absolute;
         top: 6vh;
@@ -160,7 +160,7 @@ body {
 }
 
 .left {
-    background-color: rgba(72, 72, 38, 0);
+    background-color: rgba(255, 255, 0, 0.4);
     height: 6.5vh;
     width: 6.5vh;
     margin-left: 6.45vh;
