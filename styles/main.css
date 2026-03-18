@@ -135,7 +135,7 @@ body {
     }
 
     .texto-main h2 {
-        font-size: 7vh;s
+        font-size: 7vh;
 
         position: absolute;
         top: 6vh;
@@ -160,12 +160,19 @@ body {
 }
 
 .left {
-    background-color: rgba(255, 255, 0, 0.4);
+    background-color: rgba(255, 255, 0, 0);
     height: 6.5vh;
     width: 6.5vh;
     margin-left: 6.45vh;
     position: absolute;
     border-radius: 20vh;
+}
+
+.left {
+    background-image: url('../Assets/btn1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .center {
