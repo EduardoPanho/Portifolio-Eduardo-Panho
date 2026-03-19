@@ -166,6 +166,7 @@ body {
     margin-left: 6.45vh;
     position: absolute;
     border-radius: 20vh;
+    cursor: pointer;
 }
 
 .left {
@@ -226,9 +227,6 @@ body {
 
 .center {
     background-image: url('../Assets/centerbg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .tab1,
@@ -272,4 +270,128 @@ body {
 
 .search {
     margin-right: 1vh;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: -43vh;
+    left: -24.1vh;
+
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.modal.ativo {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0);
+    width: 58vh;
+    height: 29.2vh;
+    margin: 20% auto;
+    border-radius: 47px;
+
+    transform: scale(0.9);
+    transition: transform 0.25s ease;
+}
+
+.modal-img,
+.center,
+.modal-info,
+.fechar {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.modalbgimg {
+    width: 79vh;
+    position: absolute;
+    top: -10.7vh;
+    left: -10vh;
+    z-index: 0; 
+}
+
+
+.modal-img {
+    background-image: url('../Assets/modallogoimg.png');
+}
+
+.modal.ativo .modal-content {
+    transform: scale(1);
+}
+
+.fechar {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.modal-img {
+    background-color: rgba(0, 0, 255, 0);
+    width: 9.6vh;
+    height: 9.6vh;
+
+    position: relative;
+    margin-left: 3.8vh;
+    top: 4.5vh;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.modal-info {
+    position: relative;
+    background-color: rgba(34, 255, 0, 0.427);
+
+    width: 23vh;
+    height: 5vh;
+    left: 15.5vh;
+    top: 2vh;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.modal-info {
+    background-image: url('../Assets/editcardsimg.png');
+}
+
+.fechar {
+    background-color: rgba(245, 245, 220, 0.355);
+    border: none;
+    position: relative;
+    margin-top: -12.1vh;
+    margin-right: 2vh;
+    width: 6.5vh;
+    height: 6.5vh;
+    border-radius: 50%;
+}
+
+.fechar {
+    background-image: url('../Assets/closeimg.png');
+}
+
+.fechar,
+.modal-info,
+.tab1,
+.home,
+.projetos,
+.formacao,
+.search {
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.fechar:hover,
+.modal-info:hover,
+.tab1:hover,
+.home:hover,
+.projetos:hover,
+.formacao:hover,
+.search:hover {
+  transform: scale(1.05); /* menor = mais suave */
+  filter: brightness(1.1); /* leve destaque */
 }
