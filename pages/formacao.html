@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Panho</title>
   <link rel="stylesheet" href="./../styles/formacao/formacao.css">
-  <link rel="stylesheet" href="./../styles/repeated_css/header.css">
+  <link rel="stylesheet" href="./../styles/home_style/footer.css">
+
   <script type="module" src="./../controller/formacao/formacao.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <header>
-    <div class="secao-header" id="logo-profissao">
-      <img id="img" src="./../assets/logo_compass.png" alt>
-      <div id="profissao">
-        <h4>Estudante - Ensino Médio</h4>
-      </div>
-    </div>
-    <button onclick="window.location.href='./../index.html'" class="button">
-      <div class="wrap">
-        <p>
-          <span>✧</span>
-          <span>✦</span>
-          Home 
-        </p>
-      </div>
-    </button>
-    <button onclick="window.location.href='./projetos.html'" class="button">
-      <div class="wrap">
-        <p>
-          <span>✧</span>
-          <span>✦</span>
-          Projetos
-        </p>
-      </div>
-    </button>
-    <button onclick="window.location.href='./formacao.html'" class="button">
-      <div class="wrap">
-        <p>
-          <span>✧</span>
-          <span>✦</span>
-          Formação
-        </p>
-      </div>
-    </button>
-    </div>
-  </header>
 
-<section id="cards">
-</section>
+  <footer class="footer">
+
+    <button title="Clique para abrir o GitHub." onclick="window.location.href='https://github.com/EduardoPanho'"
+      class="footer-left">
+      <i class="fa-brands fa-github fa-2xl"></i>
+    </button>
+
+    <div class="footer-center">
+
+      <button onclick="toggleModal()" class="tab1 nav-item"><i class="fa-solid fa-bars fa-xl"></i></button>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-img"></div>
+
+          <div onclick="window.location.href='https://portfolio-edit-one.vercel.app/cards.html'" class="modal-info">
+          </div>
+
+          <button class="fechar" onclick="toggleModal()"></button>
+        </div>
+      </div>
+
+      <button onclick="window.location.href='./../index.html'" class="home nav-item">
+        <p class="text-home">Home</p>
+      </button>
+
+      <button onclick="window.location.href='./projetos.html'"
+        class="projetos nav-item">
+        <p class="text-projetos">Projetos</p>
+      </button>
+
+      <button style="background-color: #EDEDED;" onclick="window.location.href='./formacao.html'" class="formacao nav-item">
+        <p style="color: #0088FF;" class="text-formacao">Formação</p>
+      </button>
+
+      <button class="search nav-item"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+
+    </div>
+
+    <div class="footer-right">
+      <button class="toolbar-btn"></button>
+    </div>
+
+  </footer>
+
+  <section id="cards">
+  </section>
 </body>
+
 </html>

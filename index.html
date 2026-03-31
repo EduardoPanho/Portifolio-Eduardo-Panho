@@ -2,54 +2,72 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eduardo Panho</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Panho</title>
 
-  <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="./styles/home_style/footer.css">
-  <link rel="stylesheet" href="./styles/repeated_css/header.css">
+    <link rel="stylesheet" href="./styles/repeated_css/index.css">
+    <link rel="stylesheet" href="./styles/home_style/footer.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/repeated_css/header.css">
+    <link rel="stylesheet" href="./styles/repeated_css/bg/home_bg.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-  <footer class="footer">
-    <div onclick="window.location.href='https://github.com/EduardoPanho'" 
-          title="Ir para GirHub do criador" class="left">
-    </div>
+    <footer class="footer">
 
-    <div class="center">
-      <div onclick="toggleModal()" class="tab1">
-        <img class="tabimg" src="./Assets/Tab.png" alt="">
-      </div>
+        <button title="Clique para abrir o GitHub." onclick="window.location.href='https://github.com/EduardoPanho'" class="footer-left">
+            <i class="fa-brands fa-github fa-2xl"></i>
+        </button>
 
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <div class="modal-img"></div>
-          <div onclick="window.location.href='https://portfolio-edit-one.vercel.app/cards.html'" 
-          title="Ir para a página de editar cards" class="modal-info"></div>
-          <button class="fechar" onclick="toggleModal()"></button>
-          <img class="modalbgimg" src="./Assets/modalbgimg.png" alt="">
+        <div class="footer-center">
+
+            <button onclick="toggleModal()" class="tab1 nav-item"><i class="fa-solid fa-bars fa-xl"></i></button>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-img"></div>
+
+                    <div onclick="window.location.href='https://portfolio-edit-one.vercel.app/cards.html'"
+                        class="modal-info"></div>
+
+                    <button class="fechar" onclick="toggleModal()"></button>
+                </div>
+            </div>
+
+            <button style="background-color: #EDEDED;" onclick="window.location.href='./index.html'"
+                class="home nav-item">
+                <p style="color: #0088FF;" class="text-home">Home</p>
+            </button>
+
+            <button onclick="window.location.href='./pages/projetos.html'" class="projetos nav-item">
+                <p class="text-projetos">Projetos</p>
+            </button>
+
+            <button onclick="window.location.href='./pages/formacao.html'" class="formacao nav-item">
+                <p class="text-formacao">Formação</p>
+            </button>
+
+            <button class="search nav-item"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+
         </div>
-      </div>
-      <div onclick="window.location.href='./index.html'" class="home"><img class="homeimg" src="./Assets/home.png"
-          alt=""></div>
-      <div onclick="window.location.href='./pages/projetos.html'" class="projetos"><img class="projetosimg"
-          src="./Assets/projetosimg.png" alt=""></div>
-      <div onclick="window.location.href='./pages/formacao.html'" class="formacao"><img class="formacaoimg"
-          src="./Assets/formacaoimg.png" alt=""></div>
-      <div class="search"><img class="searchimg" src="./Assets/Searchimg.png" alt=""></div>
-    </div>
 
-    <div class="right">
-      <div class="Toolbarbt2">
+        <div class="footer-right">
+            <button class="toolbar-btn"></button>
+        </div>
 
-      </div>
-      <div class="Toolbarbt3">
+    </footer>
 
-      </div>
-    </div>
-  </footer>
-  <script src="./controller/homeinicio/tab_controller.js"></script>
+    <script src="./controller/tab/tab_home.js"></script>
 </body>
 
 </html>
