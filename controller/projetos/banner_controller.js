@@ -3,7 +3,8 @@ const totalBanners = 5;
 
 export function girarBanner(n_banner) {
     let banners = document.getElementById("banners");
-    banners.style.left = "-" + n_banner + "00vw";
+
+    banners.style.transform = `translateX(-${n_banner * 100}vw)`;
 
     for (let i = 0; i < totalBanners; i++) {
         let btn = document.getElementById(`btn_banner_${i}`);
@@ -15,7 +16,6 @@ export function girarBanner(n_banner) {
 
     bannerAtual = n_banner;
 }
-
 
 setInterval(() => {
     let proximo = (bannerAtual + 1) % totalBanners;
