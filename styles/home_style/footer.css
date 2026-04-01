@@ -36,6 +36,17 @@
     padding: 0 12px;
 }
 
+.footer-center {
+    transform: scaleX(0.95);
+    transform-origin: left;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.modal.ativo ~ .footer-center,
+.footer-center:has(.modal.ativo) {
+    transform: scaleX(1);
+}
+
 .footer-right {
     height: 6.5vh;
     display: flex;
@@ -81,24 +92,47 @@
 }
 
 .modal {
-    display: none;
     position: absolute;
-    top: -43vh;
-    left: -24.1vh;
     opacity: 0;
-    transition: opacity 0.25s ease;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateX(-120px);
+    transition: 
+        opacity 0.25s ease,
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0s linear 0.4s;
 }
 
 .modal.ativo {
-    display: block;
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateX(0);
+
+    transition: 
+        opacity 0.25s ease,
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0s;
+}
+
+.footer-center.modal-aberto .home,
+.footer-center.modal-aberto .projetos,
+.footer-center.modal-aberto .formacao,
+.footer-center.modal-aberto .search {
+    pointer-events: none;
+    transform: none !important;
+    filter: none !important;
 }
 
 .modal-content {
-    width: 500px;
-    height: 230px;
-    margin: 20% auto;
+    width: 270px;
+    height: 6.5vh;
     border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 
     transform: scale(0.9);
     transition: transform 0.25s ease;
@@ -108,35 +142,34 @@
     transform: scale(1);
 }
 
-.modal-img,
-.modal-info,
-.fechar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 16px;
-}
-
 .modal-info {
     width: 180px;
     height: 40px;
     border-radius: 40px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+    background-color: #EDEDED;
 }
 
 .fechar {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    margin-left: auto;
-    background-color: blue;
+    background-color: #EDEDED;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    margin-left: 18px;
 }
 
 .footer-left,
@@ -170,9 +203,9 @@
 .footer-center,
 .footer-left,
 .toolbar-btn,
-.modal-content,
 .container_1,
-.pdf {
+.pdf,
+.modal-content {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(8px);
@@ -185,7 +218,8 @@
         0 4px 20px rgba(255, 255, 255, 0.178);
 }
 
-p {
+p,
+h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: larger;
@@ -196,6 +230,6 @@ button {
     border: none;
 }
 
-.footer_space{
-    height: 500px;
+.footer_space {
+    height: 200px;
 }

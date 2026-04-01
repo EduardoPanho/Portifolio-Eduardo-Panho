@@ -2,72 +2,74 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduardo Panho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Panho</title>
 
-    <link rel="stylesheet" href="./styles/repeated_css/index.css">
-    <link rel="stylesheet" href="./styles/home_style/footer.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/repeated_css/header.css">
-    <link rel="stylesheet" href="./styles/repeated_css/bg/home_bg.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/home_style/footer.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/repeated_css/bg/home_bg.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    <footer class="footer">
+  <footer class="footer">
 
-        <button title="Clique para abrir o GitHub." onclick="window.location.href='https://github.com/EduardoPanho'" class="footer-left">
-            <i class="fa-brands fa-github fa-2xl"></i>
-        </button>
+    <button title="Clique para abrir o GitHub." onclick="window.location.href='https://github.com/EduardoPanho'"
+      class="footer-left">
+      <i class="fa-brands fa-github fa-2xl"></i>
+    </button>
 
-        <div class="footer-center">
+    <div class="footer-center">
 
-            <button onclick="toggleModal()" class="tab1 nav-item"><i class="fa-solid fa-bars fa-xl"></i></button>
+      <button onclick="toggleModal()" class="tab1 nav-item"><i class="fa-solid fa-bars fa-xl"></i></button>
 
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-img"></div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
 
-                    <div onclick="window.location.href='https://portfolio-edit-one.vercel.app/cards.html'"
-                        class="modal-info"></div>
+          <button onclick="window.location.href='https://portfolio-edit-one.vercel.app/cards.html'" class="modal-info">
+            <p>Editar cards</p>
+          </button>
 
-                    <button class="fechar" onclick="toggleModal()"></button>
-                </div>
-            </div>
-
-            <button style="background-color: #EDEDED;" onclick="window.location.href='./index.html'"
-                class="home nav-item">
-                <p style="color: #0088FF;" class="text-home">Home</p>
-            </button>
-
-            <button onclick="window.location.href='./pages/projetos.html'" class="projetos nav-item">
-                <p class="text-projetos">Projetos</p>
-            </button>
-
-            <button onclick="window.location.href='./pages/formacao.html'" class="formacao nav-item">
-                <p class="text-formacao">Formação</p>
-            </button>
-
-            <button class="search nav-item"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+          <button class="fechar" onclick="toggleModal()"><i class="fa-solid fa-xmark fa-xl"></i></button>
 
         </div>
+      </div>
 
-        <div class="footer-right">
-            <button class="toolbar-btn"></button>
-        </div>
+      <button style="background-color: #EDEDED;" onclick="window.location.href='./index.html'" class="home nav-item">
+        <p style="color: #0088FF;" class="text-home">Home</p>
+      </button>
 
-    </footer>
+      <button onclick="window.location.href='./pages/projetos.html'" class="projetos nav-item">
+        <p class="text-projetos">Projetos</p>
+      </button>
 
-    <script src="./controller/tab/tab_home.js"></script>
+      <button onclick="window.location.href='./pages/formacao.html'" class="formacao nav-item">
+        <p class="text-formacao">Formação</p>
+      </button>
+
+      <button class="search nav-item"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+
+    </div>
+
+    <div class="footer-right">
+      <button class="toolbar-btn" title="Clique para abrir o certificado."
+        onclick="window.location.href='https://drive.google.com/file/d/13LuqcThsnZye7Qsr5_9xsr-9DtZAkC2u/view?usp=sharing'"><i
+          class="fa-regular fa-file fa-xl"></i></button>
+    </div>
+
+  </footer>
+
+  <script src="./controller/homeinicio/tab_controller.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,7 @@ let aberto = false;
 
 function toggleModal() {
   const modal = document.getElementById("modal");
+  const footerCenter = document.querySelector(".footer-center");
 
   if (aberto) {
     modal.classList.remove("ativo");
@@ -9,6 +10,8 @@ function toggleModal() {
     setTimeout(() => {
       modal.style.display = "none";
     }, 250);
+
+    footerCenter.classList.remove("modal-aberto");
 
     aberto = false;
 
@@ -18,6 +21,8 @@ function toggleModal() {
     setTimeout(() => {
       modal.classList.add("ativo");
     }, 10);
+
+    footerCenter.classList.add("modal-aberto");
 
     aberto = true;
   }

@@ -1,8 +1,6 @@
 export const bd_cards_formacao = [
-    { titulo: "Yonsei University", preco: "연세대학교", imagem: "./../assets/Yonsei_Img_1.png" },
-    { titulo: "formação - Exatas", preco: "Carga horária - 250h", imagem: "./../assets/Yonsei_Img_2.png" },
-    { titulo: "KAIST University", preco: "카이스트대학교", imagem: "./../assets/KAIST_Img_1.png" },
-    { titulo: "formação - Linguagens - Coreano", preco: "Carga horária - 130h", imagem: "./../assets/KAIST_Img_2.png" },
-    { titulo: "Sejong University", preco: "세종대학교", imagem: "./../assets/Sejong_Img_1.png" },
-    { titulo: "formação - sistemas", preco: "Carga horária - 120h", imagem: "./../assets/Sejong_Img_2.png"},
+    { titulo: "Francisco Beltrão", preco: "Unipar", imagem: "./../assets/education/div_img_1.jpg" },
+    { titulo: "formação - Sistemas", preco: "Carga horária em andamento", imagem: "./../assets/education/div_img_2.png" },
+    { titulo: "Francisco Beltrão", preco: "Senac", imagem: "./../assets/education/div_img_3.png" },
+    { titulo: "formação - Programação web", preco: "Carga horária - 240h", imagem: "./../assets/education/div_img_4.png" },
 ];

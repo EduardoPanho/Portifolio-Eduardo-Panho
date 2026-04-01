@@ -7,6 +7,8 @@
   <title>Eduardo Panho</title>
   <link rel="stylesheet" href="./../styles/formacao/formacao.css">
   <link rel="stylesheet" href="./../styles/home_style/footer.css">
+  <link rel="stylesheet" href="./../styles/repeated_css/bg/education_bg.css">
+  <link rel="stylesheet" href="./../styles/index.css">
 
   <script type="module" src="./../controller/formacao/formacao.js"></script>
 
@@ -30,12 +32,13 @@
 
       <div id="modal" class="modal">
         <div class="modal-content">
-          <div class="modal-img"></div>
 
-          <div onclick="window.location.href='https://portfolio-edit-one.vercel.app/cards.html'" class="modal-info">
-          </div>
+          <button onclick="window.location.href='https://portfolio-edit-one.vercel.app/cards.html'" class="modal-info">
+            <p>Editar cards</p>
+          </button>
 
-          <button class="fechar" onclick="toggleModal()"></button>
+          <button class="fechar" onclick="toggleModal()"><i class="fa-solid fa-xmark fa-xl"></i></button>
+
         </div>
       </div>
 
@@ -43,12 +46,12 @@
         <p class="text-home">Home</p>
       </button>
 
-      <button onclick="window.location.href='./projetos.html'"
-        class="projetos nav-item">
+      <button onclick="window.location.href='./projetos.html'" class="projetos nav-item">
         <p class="text-projetos">Projetos</p>
       </button>
 
-      <button style="background-color: #EDEDED;" onclick="window.location.href='./formacao.html'" class="formacao nav-item">
+      <button style="background-color: #EDEDED;" onclick="window.location.href='./formacao.html'"
+        class="formacao nav-item">
         <p style="color: #0088FF;" class="text-formacao">Formação</p>
       </button>
 
@@ -57,13 +60,18 @@
     </div>
 
     <div class="footer-right">
-      <button class="toolbar-btn"></button>
+      <button class="toolbar-btn" title="Clique para abrir o certificado."
+        onclick="window.location.href='https://drive.google.com/file/d/13LuqcThsnZye7Qsr5_9xsr-9DtZAkC2u/view?usp=sharing'"><i
+          class="fa-regular fa-file fa-xl"></i></button>
     </div>
 
   </footer>
 
   <section id="cards">
   </section>
+
+  <script src="./../controller/homeinicio/tab_controller.js"></script>
+
 </body>
 
 </html>
