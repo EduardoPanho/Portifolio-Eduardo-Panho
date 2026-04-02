@@ -8,6 +8,18 @@ body {
     background-attachment: fixed;
 }
 
+#informacoes {
+    width: 30vw;
+    height: 60vh;
+
+    position: absolute;
+    top: 22vh;
+    left: 5vw;
+
+    background-color: rgba(64, 170, 231, 0);
+}
+
+
 .Carrossel {
     z-index: -1;
     position: absolute;
