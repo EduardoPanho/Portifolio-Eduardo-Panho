@@ -1,34 +1,3 @@
-.bg-bottom {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('./../../../Assets/backgrounds/projects_bg.jpeg');
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-}
-
-.bg-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('./../../../Assets/backgrounds/clipping.png');
-    background-size: cover;
-    background-position: center;
-    z-index: 2;
-    pointer-events: none;
-}
-
-#banners_com_btns {
-    position: relative;
-    z-index: 1;
-}
-
-#cards {
-    position: relative;
-    z-index: 3;
+body {
+    background-image: url('./../../../Assets/backgrounds/home_background2.png');
 }
