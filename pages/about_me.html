@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./../styles/repeated_css/bg/education_bg.css">
     <link rel="stylesheet" href="./../styles/index.css">
 
-    <script type="module" src="./../controller/formacao/formacao.js"></script>
+    <script type="module" src="./../rounded_disk.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -44,16 +44,40 @@
                     minha forma de pensar e desenvolver soluções digitais.</h2>
             </div>
             <div class="cards_about">
-                <div class="card card1"></div>
-                <div title="Energia criativa - Stray Kids." class="vinyl_container">
-                    <div class="disk"></div>
+                <div class="card card1">
+                    <div class="title_div_1">
+                        <h1>Criatividade</h1>
+                    </div>
+                    <div class="img_div_1"></div>
+                </div>
+                <div title="Energia criativa - Kpop." class="vinyl_container">
+                    <div class="disk" id="disk"></div>
+                    <div class="spin_blur" id="spinBlur"></div>
                     <div class="needle"></div>
                 </div>
                 <div class="card card3"><i class="fa-solid fa-pen fa-2xl"></i><i
                         class="fa-solid fa-paintbrush fa-2xl"></i><i class="fa-solid fa-ruler fa-2xl"></i><i
                         class="fa-solid fa-bezier-curve fa-2xl"></i></div>
-                <div class="card card4"></div>
-                <div class="card card5"></div>
+                <div class="card card4">
+                    <div class="title_div_4">
+                        <h1>Fontes de inspiração</h1>
+                    </div>
+                    <div class="img_div_4"></div>
+                </div>
+                <div class="card card5">
+                    <div class="mini_cards mini_1">
+                        <h1 class="white">Arquitetura</h1>
+                    </div>
+                    <div class="mini_cards mini_2">
+                        <h1 class="white">Arte Digital</h1>
+                    </div>
+                    <div class="mini_cards mini_3">
+                        <h1 class="white">Cinema</h1>
+                    </div>
+                    <div class="mini_cards mini_4">
+                        <h1 class="white">Música</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -67,7 +91,8 @@
 
         <div class="footer-center">
 
-            <button onclick="toggleModal()" title="Clique para editar projetos." class="tab1 nav-item"><i class="fa-solid fa-bars fa-xl"></i></button>
+            <button onclick="toggleModal()" title="Clique para editar projetos." class="tab1 nav-item"><i
+                    class="fa-solid fa-bars fa-xl"></i></button>
 
             <div id="modal" class="modal">
                 <div class="modal-content">
@@ -94,8 +119,9 @@
                 <p class="text-formacao">Formação</p>
             </button>
 
-            <button onclick="window.location.href='./about_me.html'" title="Sobre Mim" style="background-color: #EDEDED;"
-                class="search nav-item"><i style="color: #0088FF;" class="fa-regular fa-user fa-xl"></i></button>
+            <button onclick="window.location.href='./about_me.html'" title="Sobre Mim"
+                style="background-color: #EDEDED;" class="search nav-item"><i style="color: #0088FF;"
+                    class="fa-regular fa-user fa-xl"></i></button>
 
         </div>
 

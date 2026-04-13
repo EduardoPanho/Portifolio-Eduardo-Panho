@@ -19,7 +19,7 @@ main {
 .about_div,
 .card,
 .vinyl_container {
-    background: rgba(228, 228, 228, 0.301);
+    background: rgba(255, 255, 255, 0.301);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(8px);
 
@@ -28,14 +28,9 @@ main {
     box-shadow:
         inset 0 1px 0px rgba(255, 255, 255, 0.818),
         inset 0 -2px 0px rgba(255, 255, 255, 0.262),
-        0 4px 20px rgba(255, 255, 255, 0.178);
-
-    -webkit-box-shadow: 0px 0px 50px -1px rgba(0, 0, 0, 0.26);
-    box-shadow: 0px 0px 50px -1px rgba(0, 0, 0, 0.26);
+        0 4px 20px rgba(66, 66, 66, 0.178);
 }
 
-
-/* CARD SUPERIOR */
 .about_me {
     width: 1200px;
     height: 250px;
@@ -66,8 +61,6 @@ main {
     border-radius: 28px;
 }
 
-
-/* BLOCO DE BAIXO */
 .about_div {
     width: 1200px;
 
@@ -80,8 +73,6 @@ main {
     border-radius: 48px;
 }
 
-
-/* TEXTO SUPERIOR */
 .text_top {
     width: 100%;
     height: 100px;
@@ -89,7 +80,6 @@ main {
 }
 
 
-/* GRID DOS CARDS */
 .cards_about {
     display: grid;
 
@@ -99,18 +89,46 @@ main {
     gap: 40px;
 }
 
-/* BASE DOS CARDS */
 .card,
 .vinyl_container {
     border-radius: 28px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-/* TAMANHOS INDIVIDUAIS */
 .card1 {
     grid-row: 1 / 3;
     grid-column: 1;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title_div_1,
+.img_div_1,
+.title_div_4,
+.img_div_4,
+.mini_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+
+.title_div_1 {
+    background-color: white;
+    height: 120px;
+    width: 250px;
+}
+
+.img_div_1 {
+    height: 240px;
+    width: 250px;
+    background-color: white;
+    background-image: url('./../../Assets/icons/to_create.jpg');
 }
 
 .vinyl_container {
@@ -131,20 +149,68 @@ main {
 .card4 {
     grid-row: 1;
     grid-column: 4;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title_div_4 {
+    background-color: white;
+    height: 50px;
+    width: 400px;
+}
+
+.img_div_4 {
+    background-color: white;
+    height: 70px;
+    width: 400px;
 }
 
 .card5 {
     grid-row: 2;
     grid-column: 2 / 5;
+    gap: 36px;
+}
+
+.mini_cards {
+    height: 155px;
+    width: 155px;
+    background-color: white;
+}
+
+.mini_1 {
+    background-image: url('./../../Assets/icons/city.jpg');
+}
+
+.mini_2 {
+    background-image: url('./../../Assets/icons/art_digital.jpg');
+}
+
+.mini_3 {
+    background-image: url('./../../Assets/icons/harry_potter.jpg');
+}
+
+
+.mini_4 {
+    background-image: url('./../../Assets/icons/Stray_Kids.jpg');
 }
 
 .gray {
     color: #525252;
 }
 
+.white {
+    color: #ffffff;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+}
+
 .disk,
 .needle,
-.me_img {
+.me_img,
+.img_div_1,
+.mini_1,
+.mini_2,
+.mini_3,
+.mini_4 {
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -164,6 +230,7 @@ main {
     background-image: url('./../../Assets/icons/needle.png');
     background-size: cover;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+    z-index: 4;
 }
 
 .vinyl_container {
@@ -171,13 +238,62 @@ main {
 }
 
 .disk {
+    position: absolute;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-image: url('./../../Assets/icons/disk_1.png');
 
+    background-size: cover;
+    background-position: center;
 
-    animation: girar 5s linear infinite;
+    transition: filter 0.4s ease;
+    z-index: 2;
+}
+
+.spin_blur {
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    background-image: url('./../../Assets/icons/spin_blur.png');
+
+    opacity: 0.35;
+
+    background-size: cover;
+    background-position: center;
+
+    z-index: 3;
+
+    pointer-events: none;
+
+    transition: 0.17s ease-in-out;
+}
+
+@keyframes girarNormal {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fastSpin {
+    animation: girarTurbo 0.25s linear infinite !important;
+    filter: blur(4px) brightness(1.15);
+    transition: filter 0.4s ease;
+}
+
+@keyframes girarTurbo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .needle {
@@ -188,17 +304,6 @@ main {
     height: 150px;
     background-image: url('./../../Assets/icons/needle.png');
     background-size: 90px;
-}
-
-
-@keyframes girar {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 h1 {
@@ -222,11 +327,10 @@ h1 {
     transform: scale(1.05);
 }
 
-.card3{
+.card3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 45px;
-    color: #2f2f2f;
 }
