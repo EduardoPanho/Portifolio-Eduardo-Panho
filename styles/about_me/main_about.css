@@ -17,7 +17,8 @@ main {
 
 .about_me,
 .about_div,
-.card {
+.card,
+.vinyl_container {
     background: rgba(228, 228, 228, 0.301);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(8px);
@@ -99,7 +100,8 @@ main {
 }
 
 /* BASE DOS CARDS */
-.card {
+.card,
+.vinyl_container {
     border-radius: 28px;
     flex-shrink: 0;
 }
@@ -111,10 +113,15 @@ main {
     grid-column: 1;
 }
 
-.card2 {
+.vinyl_container {
     grid-row: 1;
     grid-column: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .card3 {
     grid-row: 1;
@@ -131,6 +138,68 @@ main {
     grid-column: 2 / 5;
 }
 
-.gray{
+.gray {
     color: #525252;
+}
+
+.disk,
+.needle {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.needle {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 150px;
+    height: 150px;
+
+    background-image: url('./../../Assets/icons/needle.png');
+    background-size: cover;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+}
+
+.vinyl_container {
+    position: relative;
+}
+
+.disk {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('./../../Assets/icons/disk_1.png');
+
+
+    animation: girar 5s linear infinite;
+}
+
+.needle {
+    position: absolute;
+    top: 0px;
+    left: 68px;
+    width: 150px;
+    height: 150px;
+    background-image: url('./../../Assets/icons/needle.png');
+    background-size: 90px;
+}
+
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    color: #2f2f2f;
 }
