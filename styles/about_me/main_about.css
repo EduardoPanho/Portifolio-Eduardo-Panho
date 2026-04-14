@@ -110,12 +110,17 @@ main {
 .img_div_1,
 .title_div_4,
 .img_div_4,
-.mini_cards {
+.mini_cards,
+.title_div_create {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
 
+}
+
+.title_div_create{
+    flex-direction: column;
 }
 
 .title_div_1 {
